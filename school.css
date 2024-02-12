@@ -1,0 +1,124 @@
+
+:root{
+    --change_color:#ffa500;
+    --change_background-color:#5d5971;
+    --window_color: #7d78a2;
+}
+
+/*-----------------------------*/
+
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*------------------------------*/
+
+header {
+    display: flex;
+    background-color:var(--change_background-color);
+    padding: 4%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content:space-around;
+}
+
+li {
+    display: inline;
+    margin-right: 15px;
+
+    margin-right:20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.about_me {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.active{
+    color: var(--change_color);
+}
+
+a .active_about_me:hover {
+    color:var(--change_color);
+}
+/*-----------------------------------*/
+.School_post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.School_post p {
+    text-align: center;
+}
+
+.School_post input {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.School_post button {
+    width: 60%;     
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: var(--change_background-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.School_post button:hover {
+    background-color: var(--change_color); 
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted var(--window_color);
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--window_color);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

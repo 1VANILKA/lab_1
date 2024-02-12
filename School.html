@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="school.css">
+    <title>School</title>
+</head>
+<body class="container">
+    <header>
+        <ul>
+            <li>
+                <div class="tooltip">About me
+                <div>
+                    <div class="tooltiptext">
+                        <img src="kitty.png" alt="">
+                        <p>Inna Burduzhuk</p>
+                        <p>201-a</p>
+                    </div>
+                </div>
+              </div>
+            </li>
+            <li><a class="active" href="#">School</a></li>
+            <li><a href="fin.html">Financier</a></li>
+            <li><a href="Editor.html">Editor</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="School_post">
+            <p class="title_school">Search for average 2,4,6... and 1,3,5...</p>
+            <input type="text" id="School_arr" name="nums" placeholder="Enter 1,2,3...">
+            <p id="avg_even"></p>
+            <p id="avg_odd"></p>
+            <button onclick="Result()">Result</button>
+        </div>
+        <script src="school.js"></script>
+    </main>
+</body>
+</html>
